@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Github: https://github.com/harshit2000
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+
+\begin{center}
+    {\Huge \scshape Harshit Gaur} \\ \vspace{1pt}
+    New Delhi, India \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-9582705290 ~ \href{mailto:harshit.gaur2720@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{harshit.gaur2720@gmail.com}} ~ 
+    \href{https://linkedin.com/in/harshitgaur2/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/harshitgaur2}}  ~
+    \href{https://github.com/harshit2000}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/harshit2000}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bharati Vidyapeeth's College Of Engineering}{Aug. 2018 -- Aug. 2022}
+      {Bachelor of Technology (Computer Science Engineering)}{New Delhi, India}
+      \resumeItem{CGPA : 7}
+      
+    \resumeSubheading
+      {Maharaja Agarsain Public School}{Mar. 2017 -- Apr. 2018}
+     {Senior Secondary - 72\%} {New Delhi, India}
+     \resumeItem {Secondary - 95\%}
+    
+ \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{TRAINING AND INTERNSHIPS}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading {Tata Consultancy Services \resumeItem  {\href{https://github.com/harshit2000/Summer-Internship-TCS-2020}{\ExternalLink}} } 
+      {May 2020 -- August 2020}
+      {Summer Project Intern}{New Delhi, Delhi}
+      \resumeItemListStart
+        \resumeItem{Developed a machine learning model to automate the identification and extraction of different emotions from text based sentences. It helps in analysing the public data and design products accordingly.}
+        \resumeItem{Implemented using NLTK, Sklearn, Numpy, Re, Pandas and TextBlob. The problem set was provided by a mentor at TCS. Twitter dataset was used to train the model and two algorithms, LSTM and SGD classifier were  implemented for model creation.}
+        \resumeItem{The model was tested with different Tf-idf approaches as well in order to sustain the accuracy of the model. The project was submitted to the mentor for evaluation and passed successfully.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ByteDance, Ltd.}{December 2019 -- February 2020}
+      {Subject Matter Expert}{New Delhi, Delhi}
+      \resumeItemListStart
+        \resumeItem{Appointed as Subject Matter Expert under the company's Educational Division for the development of new learning platform.}
+        \resumeItem{My responsibilities was to create educational video content related to computer science and mathematics subject for the platform and write the documentation for the same.}
+        \resumeItem{Handled the quality checks(QC) for each day content and managed content streams for the final deployment.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/harshit2000/SheCare-Breast-Cancer-Detection-Using-Fuzzy-Logic-Expert-System}{Expert System For Breast Cancer Detection \ExternalLink}} $|$ \emph{Python, Tkinter, Fuzzy Logic Toolbox}}{Nov 2020}
+          \resumeItemListStart
+            \resumeItem{Implemented an Expert System for detection of Breast Cancer based on a knowledge based system.}
+            \resumeItem{Used WBCD dataset and implemented the rule base of the system using Decision tree. }
+            \resumeItem{Designed a user-friendly interface using Python Tkinter package.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{\href{https://harshit2000.github.io/}{Minimalist Portfolio (Flutter for Web) \ExternalLink}} $|$ \emph{Dart, Flutter, Android Studio, JavaScript}}{November 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a personal portfolio for professional use designed using Flutter UI and Dart. It is minimalist and simple with dark mode enabled. The project is a working demonstration of Flutter for Web}
+            \resumeItem{Deployed using Github Pages, the single page app is divided into two sections and designed to give a look of a business card. Flutter for web framework beta was used to create the flutter app as a website.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{\href{https://harshit2000.github.io/MedAssist/app.html}{MedAssist - Your health advisor \ExternalLink}} $|$ \emph{JavaScript, HTML/CSS, API}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{Designed a simple web application with an integrated chatbot which helps in seeking medical advice and assistance in case of emergencies.}
+            \resumeItem{Functionalities added to book an appointment with a doctor(Practo), prescribes basic medicines for common ailments like stomach ache, headache, etc., COVID19 assistance and ambulance services}
+            \resumeItem{Implemented using Snatchbot NLP API with HTML frontend and Javascript used for authentication and connection routes.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, C, JavaScript, MySQL} \\
+     \textbf{Technologies/Frameworks}{: Linux, Git, Django, MongoDB } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{BVPIEEE - IEEE Section Delhi}{May 2019 - December 2021}{Vice President IAS Chapter, Head of Corporate Affairs and Business Development}{\href{https://www.linkedin.com/company/bvp-ieee/mycompany/}\ExternalLink}
+            \resumeItemListStart
+                \resumeItem{Managed a team for managing the societies' activities regarding workshops, hackathons, events and recruitment.}
+                \resumeItem{Led chapter of 10 members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+        \resumeSubheading{4 Star Rated Programmer at CodeChef}{Present}{C++}
+        {\href{https://www.codechef.com/users/harshgaur27}\ExternalLink}
+    \resumeSubHeadingListEnd
+
+
+\end{document}
+
