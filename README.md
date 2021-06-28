@@ -1,4 +1,5 @@
 # My-Resume
 Contains my updated Resumes, CVs and other documents for recruitment / professional references. 
 
-[embed]https://github.com/harshit2000/My-Resume/blob/0969909bf1aa2e5fffe687704ff41dd0bb778da3/Harshit%20Gaur%20(June%202021)%20Resume.pdf[/embed]
+[![Open My Resume](https://img.shields.io/badge/-Open%20My%20Resume-yellow?style=for-the-badge&logo=appveyor)](https://github.com/harshit2000/My-Resume/files/6727054/Harshit.Gaur.June.2021.Resume.pdf)
+
